@@ -1,0 +1,140 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes wheelRotate{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes carMoving {
+            from{
+                left: 0;
+            }
+
+            to{
+                left: 100%;
+            }
+
+        }
+
+
+        #myCar {
+            width: 200px;
+            position: absolute;
+            top: 31px;
+            animation: carMoving 4s ease-in-out 0s;;
+        }
+
+        #myCar:first-child{
+
+          width: 100%;
+        }
+        #myCar img{
+            width:100%;
+        }
+
+
+        #myCar .wheel:nth-child(2) {
+
+            width: 28px;
+            position: absolute;
+            top: 45px;
+            left: 28px;
+            animation: wheelRotate 2s linear 0s;
+            animation-iteration-count: 2;
+
+        }
+
+        #myCar .wheel:nth-child(3) {
+
+            width: 28px;
+            position: absolute;
+            top: 46px;
+            left: 150px;
+            animation-iteration-count: 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="myroad.jpg" alt="">
+
+    <div id="myCar">
+
+        <img src="mycar.png" alt="">
+        <img class="wheel" src="wheel.png" alt="">
+        <img class="wheel" src="wheel.png" alt="">
+    </div>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @keyframes moveOn{
+            0%{
+                top: 70%;
+                left: 0%;
+
+            }
+            25%{
+                
+                top: 0%;
+                left: 0%;
+            }
+
+            50%{
+                top: 0%;
+                left: 70%;
+
+            }
+            75%{
+                top: 70%;
+                left: 70%;
+            }
+            100%{
+                top: 70%;
+                left: 0%;
+                right: 70%;
+            }
+        }
+
+        img{
+            width: 400px;
+            height: 200px;
+            position: absolute;
+            top: 70%;
+        }
+        .copter{
+            animation: moveOn 4s infinite;
+        }
+        div{
+            font-size: 50px;
+            text-align: center;
+        }
+       
+    </style>
+</head>
+<body>
+    <div><b>My Helicopter</b>
+            <img class="copter" src="Copter.png" alt="">
+    </div>
+</body>
+</html>

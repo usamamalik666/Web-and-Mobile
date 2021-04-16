@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        /* #Rabbit {
+            position: absolute;
+            right: 0;
+            transition: right 5s linear 0s;
+            opacity: 3s linear 0s;
+
+
+        }
+
+        #Rabbt:hover {
+            right: 800px;
+            opacity: 0;
+        }
+
+        #parent:hover {
+            background-color: green;
+        }
+
+        #parent {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        } */
+
+        @keyframes myAnimation {
+
+            from{
+                transform: rotate(0deg);
+            }
+
+            to{
+                transform: rotate(360deg);
+            }
+
+            0% {
+                background-color: orange;
+            }
+
+            9% {
+                background-color: yellow;
+            }
+
+            25% {
+                background-color: red;
+            }
+            50%{
+                background-color: purple;
+
+            }
+
+            75%{
+                background-color: pink;
+
+            }
+
+            100%{
+                background-color: blue;
+            }
+        }
+
+        from{
+            background-color: orange;
+
+        }
+        to{
+            background-color: green;
+        }
+        
+
+        #parent {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            animation: myAnimation 10s linear 0s;
+            transition: background-color 5s linear 0s width: 2s linear0s;
+            
+        }
+
+        #parent:hover{
+            background-color: green;
+            width: 600px;
+        }
+
+        #myimg {
+            width: 500px;
+            transform: rotate(20deg);
+            scale: (0.5);
+        }
+
+        #myimg:hover {
+            transform: rotate(70deg);
+            width: 600px;
+        }
+
+        #myimg2 {
+            width: 400px;
+
+        }
+
+        #myfan {
+            animation: myAnimation 1s linear 0s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="" alt="">
+    <div id="parent">
+
+    </div>
+
+    <img id="myimg" src="biryani.jpg" alt="">
+    <img id="myimg2" src="biryani.jpg" alt="">
+
+    <!-- <img id="Rabbit" src="rab.gif" alt="">
+</body> -->
+
+</html>

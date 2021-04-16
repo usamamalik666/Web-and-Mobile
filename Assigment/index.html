@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Raleway:wght@300&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <title>Gentim.com</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        #header img {
+            width: 43%;
+            margin-left: 38%;
+            margin-top: 4%;
+            display: flex;
+        }
+
+        #navbar li img {
+            width: 30px;
+            position: relative;
+            top: -5px;
+            right: 32px;
+           
+
+        }
+
+        #header1 {
+
+            display: flex;
+            position: absolute;
+            top: 20px;
+            margin-left: 7%;
+        }
+
+        #navbar ul {
+            display: flex;
+            margin-left: 18px;
+        }
+
+        ul li {
+            list-style: none;
+            margin-left: 45px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        ul li a:hover {
+            color: tomato;
+
+        }
+
+        #navbar {
+            margin: auto 30%;
+        }
+
+        #contanir .title {
+            position: absolute;
+            top: 32%;
+            left: 7%;
+        }
+
+        #contanir h1 {
+
+            font-size: 70px;
+        }
+
+        #contanir h1:hover {
+
+            color: rgb(68, 61, 60);
+            transform: scale(1.2);
+
+
+        }
+
+
+
+        #contanir p {
+            color: brown;
+            font-family: auto;
+        }
+
+        #contanir button {
+            padding: 12px 42px;
+            margin-top: 39px;
+            background: black;
+            border: 1px solid brown;
+            color: white;
+
+        }
+
+        #contanir button:hover {
+            background: tomato;
+            transform: scale(1.2);
+            border-radius: 20px;
+
+
+        }
+
+        #block {
+            display: flex;
+            width: 99%;
+            height: 300px;
+            border: 2px solid white;
+            margin: auto -14px;
+            justify-content: center;
+
+        }
+
+        #block :nth-child(1) {
+
+            width: 350px;
+            height: 350px;
+            background-color: #c32944;
+
+        }
+
+        #block :nth-child(2) {
+            width: 350px;
+            height: 350px;
+            background-color: rgb(35 30 30);
+
+        }
+
+        #block :nth-child(3) {
+            width: 350px;
+            height: 350px;
+            background-color: rgb(35 30 30);
+            box-shadow: #c32944 18px 20px 0px;
+
+        }
+
+        #block .child {
+            margin: 0px 15px;
+            margin-top: -20%;
+        }
+
+
+        #parent {
+            margin-top: -187px;
+            display: flex;
+            margin-left: 76px;
+            height: 150px;
+            width: 85%;
+            align-items: center;
+        }
+
+
+        div div.child {
+
+            height: 300px;
+            width: 200px;
+            background-color: red;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+
+        .child:nth-child(1) {
+            flex-grow: 1;
+            background-color: rgb(207 61 89);
+            margin: 20px;
+
+        }
+
+        .child:nth-child(1):hover {
+            box-shadow: inset black -1px 0px 80px;
+
+        }
+
+        .child:nth-child(2) {
+            flex-grow: 1;
+            background-color: #1b1a1a;
+            margin: 20px;
+        }
+
+        .child:nth-child(2):hover {
+            box-shadow: inset tomato -1px 0px 40px;
+        }
+
+        .child:nth-child(3) {
+            flex-grow: 1;
+            background-color: #1b1a1a;
+            margin: 20px;
+            box-shadow: #cf3d59 20px 19px;
+
+        }
+
+        .child:nth-child(3):hover {
+            box-shadow: inset tomato -1px 0px 40px;
+
+        }
+
+        #title2 {
+            padding: 30px;
+        }
+
+        #title2 img {
+            width: 40px;
+        }
+
+        .margin {
+            margin: 23px 10px;
+        }
+
+        .tex {
+            font-size: 11px;
+        }
+
+        #title2 p {
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
+        hr {
+            width: 34px;
+            margin-top: 10px;
+            background: tomato;
+        }
+
+        #header1 h1:hover {
+            color: tomato;
+            animation: animate__heartBeat;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div id="header">
+            <img src="ttt.jpg"">
+
+            <div id="header1">
+
+                <h1>Gentium.</h1>
+
+
+                <div id="navbar">
+                    <ul>
+                        <li class="item right"><a href="">Home
+                                <hr>
+                            </a> </li>
+                        <li class="item right"><a href="">Services</a> </li>
+                        <li class="item right"><a href=""> Works</a></li>
+                        <li class="item right"><a href="">About</a> </li>
+                        <li class="item right"><a href="">Client</a> </li>
+                        <li class="item right"><a href="">Blog</a> </li>
+                        <li class="item right"><a href="">Contant</a> </li>
+                        <li class="item right" ><img src="ccc.PNG" alt=""></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div id="contanir">
+            <div class="title">
+                <p> ________</p>
+                <h1> We'er a digitgal <br> agency.</h1>
+                <button>Getting Started</button>
+            </div>
+        </div>
+    </header>
+
+    <div id="footer">
+
+        <div id="parent">
+            <div class="child">
+                <div id="title2">
+                    <img class="margin" src="qqq.PNG" alt="">
+
+                    <div class="tex">
+                        <h1 class="margin">Future Vision.
+                            <hr>
+                        </h1>
+
+                        <p class="margin">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto natus
+                            praesentium Iusto natus
+                            praesentium </p>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="child">
+                <div id="title2">
+                    <img class="margin" src="vvv.PNG" alt="">
+                    <div class="tex">
+                        <h1 class="margin">Production Design.
+                            <hr>
+                        </h1>
+
+                        <p class="margin">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto natus
+                            praesentium Iusto natus
+                            praesentium </p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="child">
+                <div id="title2">
+                    <img class="margin" src="zzz.PNG" alt="">
+                    <div class="tex">
+                        <h1 class="margin">Invoitive Solutions.
+                            <hr>
+                        </h1>
+
+
+                        <p class="margin">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto natus
+                            praesentium Iusto natus
+                            praesentium </p>
+
+                    </div>
+                    <br>
+                    <br>
+                    
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
